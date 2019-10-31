@@ -12,8 +12,8 @@
 #include <algorithm>
 #include <cctype>
 #include <cstdlib>
-#include "../include/ini.h"
-#include "../include/INIReader.h"
+#include "inih/ini.h"
+#include "inih/INIReader.h"
 
 using std::string;
 

@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "../include/ini.h"
+#include "../include/inih/ini.h"
 
 static int dumper(void* user, const char* section, const char* name,
                   const char* value)

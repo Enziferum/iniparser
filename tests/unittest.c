@@ -13,7 +13,7 @@ respectively).
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/ini.h"
+#include "../include/inih/ini.h"
 
 int User;
 char Prev_section[50];
