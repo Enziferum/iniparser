@@ -7,10 +7,15 @@ option(BUILD_EXAMPLES "Do build examples?" OFF)
 set(SRC src/ini.c
         src/INIReader.cpp)
 
+set(HEADERS include/inih/ini.h
+        include/inih/INIReader.h)
+
+
 add_library(inih STATIC ${SRC})
 target_include_directories(${PROJECT_NAME} PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+set_target_properties(inih PROPERTIES PUBLIC_HEADER "${HEADERS}")
 set_target_properties(inih PROPERTIES
         ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/dist/lib
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/dist/bin
